@@ -1,0 +1,12 @@
+--- x86info-1.25/x86info.c.orig	2010-01-27 12:55:10.168084164 -0500
++++ x86info-1.25/x86info.c	2010-01-27 12:55:20.262928192 -0500
+@@ -252,8 +252,8 @@ int main (int argc, char **argv)
+ 		bind_cpu(cpu);
+ 
+ 		estimate_MHz(cpu);
+-		get_feature_flags(cpu);
+ 		get_cpu_info_basics(cpu);	/* get vendor,family,model,stepping */
++		get_feature_flags(cpu);
+ 		identify(cpu);
+ 		show_info(cpu);
+ 
